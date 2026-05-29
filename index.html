@@ -11,6 +11,7 @@
   .ct::-webkit-scrollbar{display:none}
   html{scroll-behavior:smooth}
 </style>
+<link rel="preload" as="image" href="./images/verda-hero-greenwall.webp">
 </head>
 <body class="font-sans text-slate-700">
 
@@ -62,7 +63,7 @@
 
 <!-- HERO -->
 <section class="relative text-white py-28 px-6 overflow-hidden">
-  <img src="./images/verda-hero-greenwall.jpg" class="absolute inset-0 w-full h-full object-cover" alt="">
+  <img fetchpriority="high" src="./images/verda-hero-greenwall.webp" class="absolute inset-0 w-full h-full object-cover" alt="">
   <div class="absolute inset-0 bg-gradient-to-br from-slate-900/55 via-slate-800/35 to-emerald-800/50"></div>
   <div class="relative max-w-5xl mx-auto text-center">
     <div class="inline-flex items-center gap-2 bg-emerald-500/20 text-slate-200 text-xs font-semibold uppercase tracking-widest px-4 py-1.5 rounded-full mb-6">
