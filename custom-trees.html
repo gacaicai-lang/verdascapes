@@ -16,16 +16,47 @@
 
 <!-- NAVBAR -->
 <nav class="bg-white/95 backdrop-blur border-b border-slate-200 py-4 px-6 sticky top-0 z-50">
-  <div class="max-w-7xl mx-auto flex items-center justify-between">
+  <div class="max-w-7xl mx-auto flex items-center justify-between relative">
     <a href="./index.html" class="font-bold text-2xl text-slate-800 tracking-tight">🌿 VerdaScapes</a>
     <div class="hidden lg:flex items-center gap-7 text-sm font-medium text-slate-700">
-      <a href="./index.html#solutions" class="hover:text-slate-700">Solutions</a>
-      <a href="./index.html#process" class="hover:text-slate-700">Turnkey Process</a>
-      <a href="./index.html#serve" class="hover:text-slate-700">Who We Serve</a>
-      <a href="./index.html#applications" class="hover:text-slate-700">Applications</a>
-      <a href="./index.html#projects" class="hover:text-slate-700">Projects</a>
+      <div class="relative group">
+        <button class="flex items-center gap-1 hover:text-emerald-600">Products
+          <svg class="w-3 h-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="absolute left-0 top-full pt-3 hidden group-hover:block z-50">
+          <div class="bg-white shadow-xl rounded-xl border border-slate-200 py-2 w-64">
+            <a href="./green-walls.html" class="block px-4 py-2.5 text-sm text-slate-700 hover:bg-emerald-50 hover:text-emerald-700">Green Walls &amp; Vertical Gardens</a>
+            <a href="./boxwood-hedges.html" class="block px-4 py-2.5 text-sm text-slate-700 hover:bg-emerald-50 hover:text-emerald-700">Boxwood Hedge Panels</a>
+            <a href="./plants.html" class="block px-4 py-2.5 text-sm text-slate-700 hover:bg-emerald-50 hover:text-emerald-700">Artificial Plants</a>
+            <a href="./custom-trees.html" class="block px-4 py-2.5 text-sm text-slate-700 hover:bg-emerald-50 hover:text-emerald-700">Custom Artificial Trees</a>
+            <a href="./hanging-vines.html" class="block px-4 py-2.5 text-sm text-slate-700 hover:bg-emerald-50 hover:text-emerald-700">Hanging Vines &amp; Foliage</a>
+            <a href="./faux-greenery.html" class="block px-4 py-2.5 text-sm text-slate-700 hover:bg-emerald-50 hover:text-emerald-700">Commercial Faux Greenery</a>
+          </div>
+        </div>
+      </div>
+      <a href="./index.html#applications" class="hover:text-emerald-600">Applications</a>
+      <a href="./index.html#projects" class="hover:text-emerald-600">Projects</a>
+      <a href="./about.html" class="hover:text-emerald-600">About</a>
+      <a href="./contact.html" class="hover:text-emerald-600">Contact</a>
     </div>
-    <a href="./contact.html" class="bg-emerald-500 hover:bg-emerald-600 text-white font-semibold px-5 py-2.5 rounded-lg text-sm transition">Get a Quote</a>
+    <a href="./contact.html" class="hidden lg:inline-block bg-emerald-500 hover:bg-emerald-600 text-white font-semibold px-5 py-2.5 rounded-lg text-sm transition">Get a Quote</a>
+    <input type="checkbox" id="mnav" class="peer hidden">
+    <label for="mnav" class="lg:hidden cursor-pointer text-3xl leading-none text-slate-700 select-none">&#9776;</label>
+    <div class="hidden peer-checked:flex lg:hidden flex-col absolute top-full left-0 right-0 bg-white border-b border-slate-200 shadow-lg px-6 py-4 gap-0.5 text-sm font-medium text-slate-700">
+      <span class="text-xs uppercase tracking-wider text-emerald-600 font-bold pb-1">Products</span>
+      <a href="./green-walls.html" class="py-2 pl-3 hover:text-emerald-600">Green Walls &amp; Vertical Gardens</a>
+      <a href="./boxwood-hedges.html" class="py-2 pl-3 hover:text-emerald-600">Boxwood Hedge Panels</a>
+      <a href="./plants.html" class="py-2 pl-3 hover:text-emerald-600">Artificial Plants</a>
+      <a href="./custom-trees.html" class="py-2 pl-3 hover:text-emerald-600">Custom Artificial Trees</a>
+      <a href="./hanging-vines.html" class="py-2 pl-3 hover:text-emerald-600">Hanging Vines &amp; Foliage</a>
+      <a href="./faux-greenery.html" class="py-2 pl-3 hover:text-emerald-600">Commercial Faux Greenery</a>
+      <hr class="my-2 border-slate-200">
+      <a href="./index.html#applications" class="py-2 hover:text-emerald-600">Applications</a>
+      <a href="./index.html#projects" class="py-2 hover:text-emerald-600">Projects</a>
+      <a href="./about.html" class="py-2 hover:text-emerald-600">About</a>
+      <a href="./contact.html" class="py-2 hover:text-emerald-600">Contact</a>
+      <a href="./contact.html" class="mt-2 bg-emerald-500 hover:bg-emerald-600 text-white text-center font-semibold px-5 py-2.5 rounded-lg">Get a Quote</a>
+    </div>
   </div>
 </nav>
 
@@ -72,8 +103,8 @@
       </ul>
     </div>
     <div class="grid grid-cols-2 gap-4">
-      <img src="./images/asset-wisteria.jpg" class="rounded-xl shadow-sm w-full h-full object-cover" alt="Artificial wisteria tree">
-      <img src="./images/asset-cherry-pink.jpg" class="rounded-xl shadow-sm w-full h-full object-cover" alt="Artificial cherry blossom tree">
+      <img loading="lazy" decoding="async" src="./images/asset-wisteria.jpg" class="rounded-xl shadow-sm w-full h-full object-cover" alt="Artificial wisteria tree">
+      <img loading="lazy" decoding="async" src="./images/asset-cherry-pink.jpg" class="rounded-xl shadow-sm w-full h-full object-cover" alt="Artificial cherry blossom tree">
     </div>
   </div>
 </section>
@@ -87,14 +118,14 @@
       <p class="text-slate-500 text-lg max-w-2xl mx-auto">Specify a single hero tree or a full grove — every trunk and canopy engineered, built, and packed in our own facility.</p>
     </div>
     <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-      <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-slate-200 hover:shadow-lg hover:-translate-y-1 transition"><div class="aspect-[4/3] overflow-hidden"><img src="./images/asset-cherry-pink.jpg" class="w-full h-full object-cover hover:scale-105 transition" alt="Cherry blossom tree"></div><div class="p-6"><h3 class="font-bold text-slate-900 text-lg mb-1">Blossom Trees</h3><p class="text-sm text-slate-500">Cherry, peach, and wisteria in full bloom for event and lobby centerpieces.</p></div></div>
-      <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-slate-200 hover:shadow-lg hover:-translate-y-1 transition"><div class="aspect-[4/3] overflow-hidden"><img src="./images/asset-coconut-palm.jpg" class="w-full h-full object-cover hover:scale-105 transition" alt="Coconut palm tree"></div><div class="p-6"><h3 class="font-bold text-slate-900 text-lg mb-1">Palm Trees</h3><p class="text-sm text-slate-500">Date, coconut, and fan palms for resort, pool, and atrium scapes.</p></div></div>
-      <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-slate-200 hover:shadow-lg hover:-translate-y-1 transition"><div class="aspect-[4/3] overflow-hidden"><img src="./images/asset-banyan.jpg" class="w-full h-full object-cover hover:scale-105 transition" alt="Banyan tree"></div><div class="p-6"><h3 class="font-bold text-slate-900 text-lg mb-1">Large Statement Trees</h3><p class="text-sm text-slate-500">Banyan, ficus, and willow specimens up to 8 m for landmark interiors.</p></div></div>
-      <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-slate-200 hover:shadow-lg hover:-translate-y-1 transition"><div class="aspect-[4/3] overflow-hidden"><img src="./images/asset-olive.jpg" class="w-full h-full object-cover hover:scale-105 transition" alt="Olive tree"></div><div class="p-6"><h3 class="font-bold text-slate-900 text-lg mb-1">Olive & Mediterranean</h3><p class="text-sm text-slate-500">Olive, eucalyptus, and bay for restaurant and courtyard themes.</p></div></div>
-      <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-slate-200 hover:shadow-lg hover:-translate-y-1 transition"><div class="aspect-[4/3] overflow-hidden"><img src="./images/asset-bamboo.jpg" class="w-full h-full object-cover hover:scale-105 transition" alt="Bamboo cluster"></div><div class="p-6"><h3 class="font-bold text-slate-900 text-lg mb-1">Bamboo & Groves</h3><p class="text-sm text-slate-500">Bamboo clusters and multi-stem groves for screening and zen scapes.</p></div></div>
-      <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-slate-200 hover:shadow-lg hover:-translate-y-1 transition"><div class="aspect-[4/3] overflow-hidden"><img src="./images/asset-spiral-topiary.jpg" class="w-full h-full object-cover hover:scale-105 transition" alt="Topiary tree"></div><div class="p-6"><h3 class="font-bold text-slate-900 text-lg mb-1">Topiary Trees</h3><p class="text-sm text-slate-500">Ball, cone, and spiral topiary trees for formal entrances and avenues.</p></div></div>
-      <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-slate-200 hover:shadow-lg hover:-translate-y-1 transition"><div class="aspect-[4/3] overflow-hidden"><img src="./images/asset-willow.jpg" class="w-full h-full object-cover hover:scale-105 transition" alt="Weeping willow tree"></div><div class="p-6"><h3 class="font-bold text-slate-900 text-lg mb-1">Willow & Weeping Trees</h3><p class="text-sm text-slate-500">Cascading willow and weeping forms for atriums and water-feature settings.</p></div></div>
-      <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-slate-200 hover:shadow-lg hover:-translate-y-1 transition"><div class="aspect-[4/3] overflow-hidden"><img src="./images/asset-ficus.jpg" class="w-full h-full object-cover hover:scale-105 transition" alt="Bonsai tabletop tree"></div><div class="p-6"><h3 class="font-bold text-slate-900 text-lg mb-1">Bonsai & Tabletop Trees</h3><p class="text-sm text-slate-500">Compact bonsai and miniature specimens for desks, counters, and displays.</p></div></div>
+      <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-slate-200 hover:shadow-lg hover:-translate-y-1 transition"><div class="aspect-[4/3] overflow-hidden"><img loading="lazy" decoding="async" src="./images/asset-cherry-pink.jpg" class="w-full h-full object-cover hover:scale-105 transition" alt="Cherry blossom tree"></div><div class="p-6"><h3 class="font-bold text-slate-900 text-lg mb-1">Blossom Trees</h3><p class="text-sm text-slate-500">Cherry, peach, and wisteria in full bloom for event and lobby centerpieces.</p></div></div>
+      <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-slate-200 hover:shadow-lg hover:-translate-y-1 transition"><div class="aspect-[4/3] overflow-hidden"><img loading="lazy" decoding="async" src="./images/asset-coconut-palm.jpg" class="w-full h-full object-cover hover:scale-105 transition" alt="Coconut palm tree"></div><div class="p-6"><h3 class="font-bold text-slate-900 text-lg mb-1">Palm Trees</h3><p class="text-sm text-slate-500">Date, coconut, and fan palms for resort, pool, and atrium scapes.</p></div></div>
+      <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-slate-200 hover:shadow-lg hover:-translate-y-1 transition"><div class="aspect-[4/3] overflow-hidden"><img loading="lazy" decoding="async" src="./images/asset-banyan.jpg" class="w-full h-full object-cover hover:scale-105 transition" alt="Banyan tree"></div><div class="p-6"><h3 class="font-bold text-slate-900 text-lg mb-1">Large Statement Trees</h3><p class="text-sm text-slate-500">Banyan, ficus, and willow specimens up to 8 m for landmark interiors.</p></div></div>
+      <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-slate-200 hover:shadow-lg hover:-translate-y-1 transition"><div class="aspect-[4/3] overflow-hidden"><img loading="lazy" decoding="async" src="./images/asset-olive.jpg" class="w-full h-full object-cover hover:scale-105 transition" alt="Olive tree"></div><div class="p-6"><h3 class="font-bold text-slate-900 text-lg mb-1">Olive & Mediterranean</h3><p class="text-sm text-slate-500">Olive, eucalyptus, and bay for restaurant and courtyard themes.</p></div></div>
+      <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-slate-200 hover:shadow-lg hover:-translate-y-1 transition"><div class="aspect-[4/3] overflow-hidden"><img loading="lazy" decoding="async" src="./images/asset-bamboo.jpg" class="w-full h-full object-cover hover:scale-105 transition" alt="Bamboo cluster"></div><div class="p-6"><h3 class="font-bold text-slate-900 text-lg mb-1">Bamboo & Groves</h3><p class="text-sm text-slate-500">Bamboo clusters and multi-stem groves for screening and zen scapes.</p></div></div>
+      <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-slate-200 hover:shadow-lg hover:-translate-y-1 transition"><div class="aspect-[4/3] overflow-hidden"><img loading="lazy" decoding="async" src="./images/asset-spiral-topiary.jpg" class="w-full h-full object-cover hover:scale-105 transition" alt="Topiary tree"></div><div class="p-6"><h3 class="font-bold text-slate-900 text-lg mb-1">Topiary Trees</h3><p class="text-sm text-slate-500">Ball, cone, and spiral topiary trees for formal entrances and avenues.</p></div></div>
+      <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-slate-200 hover:shadow-lg hover:-translate-y-1 transition"><div class="aspect-[4/3] overflow-hidden"><img loading="lazy" decoding="async" src="./images/asset-willow.jpg" class="w-full h-full object-cover hover:scale-105 transition" alt="Weeping willow tree"></div><div class="p-6"><h3 class="font-bold text-slate-900 text-lg mb-1">Willow & Weeping Trees</h3><p class="text-sm text-slate-500">Cascading willow and weeping forms for atriums and water-feature settings.</p></div></div>
+      <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-slate-200 hover:shadow-lg hover:-translate-y-1 transition"><div class="aspect-[4/3] overflow-hidden"><img loading="lazy" decoding="async" src="./images/asset-ficus.jpg" class="w-full h-full object-cover hover:scale-105 transition" alt="Bonsai tabletop tree"></div><div class="p-6"><h3 class="font-bold text-slate-900 text-lg mb-1">Bonsai & Tabletop Trees</h3><p class="text-sm text-slate-500">Compact bonsai and miniature specimens for desks, counters, and displays.</p></div></div>
     </div>
   </div>
 </section>
@@ -177,12 +208,12 @@
   <div class="max-w-7xl mx-auto">
     <div class="text-center mb-12"><h2 class="text-4xl font-bold text-slate-900 mb-3">Where Our Trees Perform</h2><p class="text-slate-500 text-lg">Specified as landmark features worldwide.</p></div>
     <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
-      <div class="relative aspect-[4/3] rounded-lg overflow-hidden group"><img src="./images/asset-app-hotel.jpg" class="w-full h-full object-cover group-hover:scale-105 transition" alt="Hotel lobby trees"><div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div><div class="absolute bottom-3 left-4 text-white font-semibold">Hotels & Lobbies</div></div>
-      <div class="relative aspect-[4/3] rounded-lg overflow-hidden group"><img src="./images/asset-app-mall.jpg" class="w-full h-full object-cover group-hover:scale-105 transition" alt="Mall atrium trees"><div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div><div class="absolute bottom-3 left-4 text-white font-semibold">Malls & Atriums</div></div>
-      <div class="relative aspect-[4/3] rounded-lg overflow-hidden group"><img src="./images/asset-app-resto.jpg" class="w-full h-full object-cover group-hover:scale-105 transition" alt="Restaurant trees"><div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div><div class="absolute bottom-3 left-4 text-white font-semibold">Restaurants & Cafés</div></div>
-      <div class="relative aspect-[4/3] rounded-lg overflow-hidden group"><img src="./images/asset-app-resort.jpg" class="w-full h-full object-cover group-hover:scale-105 transition" alt="Resort palm trees"><div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div><div class="absolute bottom-3 left-4 text-white font-semibold">Resorts & Pools</div></div>
-      <div class="relative aspect-[4/3] rounded-lg overflow-hidden group"><img src="./images/asset-app-street.jpg" class="w-full h-full object-cover group-hover:scale-105 transition" alt="Outdoor plaza blossom trees"><div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div><div class="absolute bottom-3 left-4 text-white font-semibold">Outdoor & Plazas</div></div>
-      <div class="relative aspect-[4/3] rounded-lg overflow-hidden group"><img src="./images/asset-app-event.jpg" class="w-full h-full object-cover group-hover:scale-105 transition" alt="Event blossom tree installation"><div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div><div class="absolute bottom-3 left-4 text-white font-semibold">Events & Venues</div></div>
+      <div class="relative aspect-[4/3] rounded-lg overflow-hidden group"><img loading="lazy" decoding="async" src="./images/asset-app-hotel.jpg" class="w-full h-full object-cover group-hover:scale-105 transition" alt="Hotel lobby trees"><div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div><div class="absolute bottom-3 left-4 text-white font-semibold">Hotels & Lobbies</div></div>
+      <div class="relative aspect-[4/3] rounded-lg overflow-hidden group"><img loading="lazy" decoding="async" src="./images/asset-app-mall.jpg" class="w-full h-full object-cover group-hover:scale-105 transition" alt="Mall atrium trees"><div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div><div class="absolute bottom-3 left-4 text-white font-semibold">Malls & Atriums</div></div>
+      <div class="relative aspect-[4/3] rounded-lg overflow-hidden group"><img loading="lazy" decoding="async" src="./images/asset-app-resto.jpg" class="w-full h-full object-cover group-hover:scale-105 transition" alt="Restaurant trees"><div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div><div class="absolute bottom-3 left-4 text-white font-semibold">Restaurants & Cafés</div></div>
+      <div class="relative aspect-[4/3] rounded-lg overflow-hidden group"><img loading="lazy" decoding="async" src="./images/asset-app-resort.jpg" class="w-full h-full object-cover group-hover:scale-105 transition" alt="Resort palm trees"><div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div><div class="absolute bottom-3 left-4 text-white font-semibold">Resorts & Pools</div></div>
+      <div class="relative aspect-[4/3] rounded-lg overflow-hidden group"><img loading="lazy" decoding="async" src="./images/asset-app-street.jpg" class="w-full h-full object-cover group-hover:scale-105 transition" alt="Outdoor plaza blossom trees"><div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div><div class="absolute bottom-3 left-4 text-white font-semibold">Outdoor & Plazas</div></div>
+      <div class="relative aspect-[4/3] rounded-lg overflow-hidden group"><img loading="lazy" decoding="async" src="./images/asset-app-event.jpg" class="w-full h-full object-cover group-hover:scale-105 transition" alt="Event blossom tree installation"><div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div><div class="absolute bottom-3 left-4 text-white font-semibold">Events & Venues</div></div>
     </div>
   </div>
 </section>
@@ -192,9 +223,9 @@
   <div class="max-w-7xl mx-auto">
     <div class="text-center mb-12"><h2 class="text-4xl font-bold mb-3">Featured Tree Projects</h2><p class="text-emerald-50/80 text-lg">Landmark trees delivered worldwide.</p></div>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div class="bg-emerald-600 rounded-xl overflow-hidden"><img src="./images/asset-app-mall.jpg" class="aspect-video w-full object-cover" alt="Mall atrium palm project"><div class="p-5"><h3 class="font-bold mb-1">Crystal Mall Atrium Palms</h3><p class="text-sm text-emerald-50/80">Qatar · five 6 m date palms</p></div></div>
-      <div class="bg-emerald-600 rounded-xl overflow-hidden"><img src="./images/asset-app-event.jpg" class="aspect-video w-full object-cover" alt="Event blossom installation project"><div class="p-5"><h3 class="font-bold mb-1">Spring Wedding Pavilion</h3><p class="text-sm text-emerald-50/80">Japan · cherry blossom canopy</p></div></div>
-      <div class="bg-emerald-600 rounded-xl overflow-hidden"><img src="./images/verda-proj3.jpg" class="aspect-video w-full object-cover" alt="Office atrium tree project"><div class="p-5"><h3 class="font-bold mb-1">London Office Atrium Banyan</h3><p class="text-sm text-emerald-50/80">UK · 7 m statement banyan tree</p></div></div>
+      <div class="bg-emerald-600 rounded-xl overflow-hidden"><img loading="lazy" decoding="async" src="./images/asset-app-mall.jpg" class="aspect-video w-full object-cover" alt="Mall atrium palm project"><div class="p-5"><h3 class="font-bold mb-1">Crystal Mall Atrium Palms</h3><p class="text-sm text-emerald-50/80">Qatar · five 6 m date palms</p></div></div>
+      <div class="bg-emerald-600 rounded-xl overflow-hidden"><img loading="lazy" decoding="async" src="./images/asset-app-event.jpg" class="aspect-video w-full object-cover" alt="Event blossom installation project"><div class="p-5"><h3 class="font-bold mb-1">Spring Wedding Pavilion</h3><p class="text-sm text-emerald-50/80">Japan · cherry blossom canopy</p></div></div>
+      <div class="bg-emerald-600 rounded-xl overflow-hidden"><img loading="lazy" decoding="async" src="./images/verda-proj3.jpg" class="aspect-video w-full object-cover" alt="Office atrium tree project"><div class="p-5"><h3 class="font-bold mb-1">London Office Atrium Banyan</h3><p class="text-sm text-emerald-50/80">UK · 7 m statement banyan tree</p></div></div>
     </div>
   </div>
 </section>
@@ -217,9 +248,9 @@
   <div class="max-w-7xl mx-auto">
     <div class="text-center mb-12"><h2 class="text-4xl font-bold text-slate-900 mb-3">What Our Clients Say</h2></div>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div class="bg-slate-50 p-8 rounded-xl"><div class="text-emerald-500 text-3xl mb-3">"</div><p class="text-slate-700 italic mb-6">Five 6 m palms arrived flat-packed and we rebuilt them in a day using the install map. The steel cores are rock-solid in our atrium.</p><div class="flex items-center gap-3"><img src="https://picsum.photos/seed/tr-t1/100/100" class="w-11 h-11 rounded-full object-cover" alt=""><div><div class="font-semibold text-slate-900 text-sm">Khalid Mansour</div><div class="text-xs text-slate-500">Mall Project Manager · Qatar</div></div></div></div>
-      <div class="bg-slate-50 p-8 rounded-xl"><div class="text-emerald-500 text-3xl mb-3">"</div><p class="text-slate-700 italic mb-6">The cherry blossom canopy was the centerpiece of every wedding photo this season. Bloom density and color were exactly to our brief.</p><div class="flex items-center gap-3"><img src="https://picsum.photos/seed/tr-t2/100/100" class="w-11 h-11 rounded-full object-cover" alt=""><div><div class="font-semibold text-slate-900 text-sm">Yuki Tanaka</div><div class="text-xs text-slate-500">Venue Director · Japan</div></div></div></div>
-      <div class="bg-slate-50 p-8 rounded-xl"><div class="text-emerald-500 text-3xl mb-3">"</div><p class="text-slate-700 italic mb-6">A 7 m banyan as our atrium hero, engineered to our ceiling height. Guests cannot believe it is not a living tree.</p><div class="flex items-center gap-3"><img src="https://picsum.photos/seed/tr-t3/100/100" class="w-11 h-11 rounded-full object-cover" alt=""><div><div class="font-semibold text-slate-900 text-sm">Emma Clarke</div><div class="text-xs text-slate-500">Interior Architect · UK</div></div></div></div>
+      <div class="bg-slate-50 p-8 rounded-xl"><div class="text-emerald-500 text-3xl mb-3">"</div><p class="text-slate-700 italic mb-6">Five 6 m palms arrived flat-packed and we rebuilt them in a day using the install map. The steel cores are rock-solid in our atrium.</p><div class="flex items-center gap-3"><img loading="lazy" decoding="async" src="https://picsum.photos/seed/tr-t1/100/100" class="w-11 h-11 rounded-full object-cover" alt=""><div><div class="font-semibold text-slate-900 text-sm">Khalid Mansour</div><div class="text-xs text-slate-500">Mall Project Manager · Qatar</div></div></div></div>
+      <div class="bg-slate-50 p-8 rounded-xl"><div class="text-emerald-500 text-3xl mb-3">"</div><p class="text-slate-700 italic mb-6">The cherry blossom canopy was the centerpiece of every wedding photo this season. Bloom density and color were exactly to our brief.</p><div class="flex items-center gap-3"><img loading="lazy" decoding="async" src="https://picsum.photos/seed/tr-t2/100/100" class="w-11 h-11 rounded-full object-cover" alt=""><div><div class="font-semibold text-slate-900 text-sm">Yuki Tanaka</div><div class="text-xs text-slate-500">Venue Director · Japan</div></div></div></div>
+      <div class="bg-slate-50 p-8 rounded-xl"><div class="text-emerald-500 text-3xl mb-3">"</div><p class="text-slate-700 italic mb-6">A 7 m banyan as our atrium hero, engineered to our ceiling height. Guests cannot believe it is not a living tree.</p><div class="flex items-center gap-3"><img loading="lazy" decoding="async" src="https://picsum.photos/seed/tr-t3/100/100" class="w-11 h-11 rounded-full object-cover" alt=""><div><div class="font-semibold text-slate-900 text-sm">Emma Clarke</div><div class="text-xs text-slate-500">Interior Architect · UK</div></div></div></div>
     </div>
   </div>
 </section>

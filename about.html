@@ -12,22 +12,52 @@
 </head>
 <body class="font-sans text-slate-700">
 <nav class="bg-white/95 backdrop-blur border-b border-slate-200 py-4 px-6 sticky top-0 z-50">
-<div class="max-w-7xl mx-auto flex items-center justify-between">
-<div class="font-bold text-2xl text-slate-800 tracking-tight">🌿 VerdaScapes</div>
-<div class="hidden lg:flex items-center gap-7 text-sm font-medium text-slate-700">
-<a class="hover:text-slate-700" href="./index.html#solutions">Solutions</a>
-<a class="hover:text-slate-700" href="./index.html#process">Turnkey Process</a>
-<a class="hover:text-slate-700" href="./index.html#serve">Who We Serve</a>
-<a class="hover:text-slate-700" href="./index.html#applications">Applications</a>
-<a class="hover:text-slate-700" href="./index.html#projects">Projects</a> <a href="./about.html" class="hover:text-emerald-700">About</a>
-      <a href="./contact.html" class="hover:text-emerald-700">Contact</a>
-</div>
-<a class="bg-emerald-500 hover:bg-emerald-600 text-white font-semibold px-5 py-2.5 rounded-lg text-sm transition" href="./contact.html">Get a Quote</a>
-</div>
+  <div class="max-w-7xl mx-auto flex items-center justify-between relative">
+    <a href="./index.html" class="font-bold text-2xl text-slate-800 tracking-tight">🌿 VerdaScapes</a>
+    <div class="hidden lg:flex items-center gap-7 text-sm font-medium text-slate-700">
+      <div class="relative group">
+        <button class="flex items-center gap-1 hover:text-emerald-600">Products
+          <svg class="w-3 h-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="absolute left-0 top-full pt-3 hidden group-hover:block z-50">
+          <div class="bg-white shadow-xl rounded-xl border border-slate-200 py-2 w-64">
+            <a href="./green-walls.html" class="block px-4 py-2.5 text-sm text-slate-700 hover:bg-emerald-50 hover:text-emerald-700">Green Walls &amp; Vertical Gardens</a>
+            <a href="./boxwood-hedges.html" class="block px-4 py-2.5 text-sm text-slate-700 hover:bg-emerald-50 hover:text-emerald-700">Boxwood Hedge Panels</a>
+            <a href="./plants.html" class="block px-4 py-2.5 text-sm text-slate-700 hover:bg-emerald-50 hover:text-emerald-700">Artificial Plants</a>
+            <a href="./custom-trees.html" class="block px-4 py-2.5 text-sm text-slate-700 hover:bg-emerald-50 hover:text-emerald-700">Custom Artificial Trees</a>
+            <a href="./hanging-vines.html" class="block px-4 py-2.5 text-sm text-slate-700 hover:bg-emerald-50 hover:text-emerald-700">Hanging Vines &amp; Foliage</a>
+            <a href="./faux-greenery.html" class="block px-4 py-2.5 text-sm text-slate-700 hover:bg-emerald-50 hover:text-emerald-700">Commercial Faux Greenery</a>
+          </div>
+        </div>
+      </div>
+      <a href="./index.html#applications" class="hover:text-emerald-600">Applications</a>
+      <a href="./index.html#projects" class="hover:text-emerald-600">Projects</a>
+      <a href="./about.html" class="hover:text-emerald-600">About</a>
+      <a href="./contact.html" class="hover:text-emerald-600">Contact</a>
+    </div>
+    <a href="./contact.html" class="hidden lg:inline-block bg-emerald-500 hover:bg-emerald-600 text-white font-semibold px-5 py-2.5 rounded-lg text-sm transition">Get a Quote</a>
+    <input type="checkbox" id="mnav" class="peer hidden">
+    <label for="mnav" class="lg:hidden cursor-pointer text-3xl leading-none text-slate-700 select-none">&#9776;</label>
+    <div class="hidden peer-checked:flex lg:hidden flex-col absolute top-full left-0 right-0 bg-white border-b border-slate-200 shadow-lg px-6 py-4 gap-0.5 text-sm font-medium text-slate-700">
+      <span class="text-xs uppercase tracking-wider text-emerald-600 font-bold pb-1">Products</span>
+      <a href="./green-walls.html" class="py-2 pl-3 hover:text-emerald-600">Green Walls &amp; Vertical Gardens</a>
+      <a href="./boxwood-hedges.html" class="py-2 pl-3 hover:text-emerald-600">Boxwood Hedge Panels</a>
+      <a href="./plants.html" class="py-2 pl-3 hover:text-emerald-600">Artificial Plants</a>
+      <a href="./custom-trees.html" class="py-2 pl-3 hover:text-emerald-600">Custom Artificial Trees</a>
+      <a href="./hanging-vines.html" class="py-2 pl-3 hover:text-emerald-600">Hanging Vines &amp; Foliage</a>
+      <a href="./faux-greenery.html" class="py-2 pl-3 hover:text-emerald-600">Commercial Faux Greenery</a>
+      <hr class="my-2 border-slate-200">
+      <a href="./index.html#applications" class="py-2 hover:text-emerald-600">Applications</a>
+      <a href="./index.html#projects" class="py-2 hover:text-emerald-600">Projects</a>
+      <a href="./about.html" class="py-2 hover:text-emerald-600">About</a>
+      <a href="./contact.html" class="py-2 hover:text-emerald-600">Contact</a>
+      <a href="./contact.html" class="mt-2 bg-emerald-500 hover:bg-emerald-600 text-white text-center font-semibold px-5 py-2.5 rounded-lg">Get a Quote</a>
+    </div>
+  </div>
 </nav>
 
 <section class="relative text-white py-20 px-6 overflow-hidden">
-  <img src="./images/verda-roof2.png" class="absolute inset-0 w-full h-full object-cover" alt="">
+  <img loading="lazy" decoding="async" src="./images/verda-roof2.jpg" class="absolute inset-0 w-full h-full object-cover" alt="">
   <div class="absolute inset-0 bg-gradient-to-br from-slate-900/70 via-emerald-900/40 to-emerald-900/55"></div>
   <div class="relative max-w-7xl mx-auto">
     <nav class="text-sm text-slate-300 mb-6"><a href="./index.html" class="hover:text-white">Home</a> <span class="mx-2">/</span> <span class="text-emerald-200">About</span></nav>
