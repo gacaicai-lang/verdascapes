@@ -4,7 +4,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>Contact VerdaScapes | Request a Free Landscape Design</title>
-<link rel="stylesheet" href="./tailwind.css?v=202605301536">
+<link rel="stylesheet" href="./tailwind.css?v=202605301543">
 <style>
   .ct::-webkit-scrollbar{display:none}
   html{scroll-behavior:smooth}
@@ -86,15 +86,34 @@
     <p class="text-slate-500 text-lg">A landscape specialist will respond within 24 hours with a tailored design direction, sample, or quote.</p>
   </div>
 
-  <!-- Layer 1: client testimonial (CEO) + form -->
-  <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+  <!-- Layer 1: client testimonial carousel (3) + form -->
+  <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
     <div class="bg-slate-50 rounded-2xl border border-slate-200 p-8">
-      <img loading="lazy" decoding="async" src="./images/avatar-t1.webp" class="w-16 h-16 rounded-full object-cover bg-slate-200" alt="">
-      <div class="text-xs font-semibold uppercase tracking-wider text-emerald-600 mt-5 mb-2">Client Feedback</div>
-      <h3 class="text-2xl font-bold text-slate-900 mb-3 leading-snug">One supplier, one shipment.</h3>
-      <p class="text-slate-600 leading-relaxed mb-6">They cut three vendors out of our supply chain &mdash; design, product, and shipping now arrive on one PO and one container, and the response was faster than any supplier we'd worked with.</p>
-      <div class="font-bold text-emerald-700">Daniel Brooks</div>
-      <div class="text-sm text-slate-500">CEO &middot; Hospitality Group, United Kingdom</div>
+      <div class="ct flex overflow-x-auto snap-x snap-mandatory">
+      <figure class="snap-center shrink-0 w-full">
+        <img loading="lazy" decoding="async" src="./images/avatar-t1.webp" class="w-14 h-14 rounded-full object-cover bg-slate-200" alt="">
+        <div class="text-xs font-semibold uppercase tracking-wider text-emerald-600 mt-4 mb-3">Client Feedback</div>
+        <blockquote class="text-lg text-slate-700 leading-relaxed mb-4">One supplier, one shipment — they cut three vendors out of our supply chain and replied faster than any supplier we'd used.</blockquote>
+        <figcaption><div class="font-bold text-emerald-700">Daniel Brooks</div><div class="text-sm text-slate-500">CEO · Hospitality Group, United Kingdom</div></figcaption>
+      </figure>
+      <figure class="snap-center shrink-0 w-full">
+        <img loading="lazy" decoding="async" src="./images/avatar-t5.webp" class="w-14 h-14 rounded-full object-cover bg-slate-200" alt="">
+        <div class="text-xs font-semibold uppercase tracking-wider text-emerald-600 mt-4 mb-3">Client Feedback</div>
+        <blockquote class="text-lg text-slate-700 leading-relaxed mb-4">From first drawing to a delivered container in weeks — the whole themed landscape arrived to spec and on schedule.</blockquote>
+        <figcaption><div class="font-bold text-emerald-700">Carlos Mendoza</div><div class="text-sm text-slate-500">Resort Developer · Madrid</div></figcaption>
+      </figure>
+      <figure class="snap-center shrink-0 w-full">
+        <img loading="lazy" decoding="async" src="./images/avatar-t2.webp" class="w-14 h-14 rounded-full object-cover bg-slate-200" alt="">
+        <div class="text-xs font-semibold uppercase tracking-wider text-emerald-600 mt-4 mb-3">Client Feedback</div>
+        <blockquote class="text-lg text-slate-700 leading-relaxed mb-4">Samples and CAD blocks on the very first round — VerdaScapes is now our default for commercial scapes.</blockquote>
+        <figcaption><div class="font-bold text-emerald-700">Sofia Marchetti</div><div class="text-sm text-slate-500">Landscape Architect · Milan</div></figcaption>
+      </figure>
+      </div>
+      <div class="flex gap-2 mt-6">
+        <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+        <span class="w-2 h-2 rounded-full bg-slate-300"></span>
+        <span class="w-2 h-2 rounded-full bg-slate-300"></span>
+      </div>
     </div>
     <div id="quote-form" class="scroll-mt-24">
       <div class="bg-white rounded-xl border border-slate-200 p-8 shadow-sm">
@@ -115,7 +134,7 @@
 
   <!-- Layer 2: contact information + map -->
   <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 mt-16 items-stretch">
-    <div>
+    <div class="flex flex-col justify-center">
       <h2 class="text-2xl font-bold mb-5 text-slate-900">Contact Information</h2>
       <div class="space-y-4 text-slate-600">
         <div class="flex items-start gap-3"><div class="text-emerald-600 text-lg">📧</div><div><div class="font-medium text-slate-900">Email</div><div>sales@verdascapes.com</div></div></div>
@@ -127,8 +146,8 @@
         <span class="text-sm text-slate-700 font-medium">Typical response within 24 hours on business days</span>
       </div>
     </div>
-    <div class="rounded-2xl overflow-hidden border border-slate-200 min-h-[340px]">
-      <iframe title="VerdaScapes factory location" src="https://maps.google.com/maps?q=Foshan,Guangdong,China&z=8&output=embed" class="w-full h-full min-h-[340px] border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="rounded-2xl overflow-hidden border border-slate-200 min-h-[360px]">
+      <iframe title="VerdaScapes factory location" src="https://www.openstreetmap.org/export/embed.html?bbox=112.0%2C22.4%2C114.2%2C23.6&amp;layer=mapnik&amp;marker=23.02%2C113.11" class="w-full h-full min-h-[360px] border-0" loading="lazy"></iframe>
     </div>
   </div>
 </section>
