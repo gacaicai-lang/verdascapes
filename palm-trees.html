@@ -9,6 +9,11 @@
 <link rel="stylesheet" href="./tailwind.css">
 <style>
   html{scroll-behavior:smooth}
+  .marquee-wrap{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+  .marquee-track{display:flex;gap:1.5rem;width:max-content;padding:0.5rem 0.75rem;animation:vs-marquee 60s linear infinite}
+  .marquee-wrap:hover .marquee-track{animation-play-state:paused}
+  @keyframes vs-marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  @media (prefers-reduced-motion:reduce){.marquee-track{animation:none;flex-wrap:wrap;justify-content:center;width:auto}}
 </style>
 <link rel="preload" as="image" href="./images/cat-palm-hero.webp">
 </head>
@@ -274,14 +279,127 @@
   </div>
 </section>
 
-<!-- TESTIMONIAL -->
-<section class="py-20 px-6 bg-slate-50">
-  <div class="max-w-3xl mx-auto text-center">
-    <div class="text-5xl text-emerald-300 mb-4">&ldquo;</div>
-    <p class="text-xl text-slate-700 leading-relaxed mb-6">The 7-metre date palms anchored our resort atrium perfectly — the trunks read as real on camera, and two years of pool humidity haven't touched them.</p>
-    <div class="flex items-center justify-center gap-3">
-      <img loading="lazy" decoding="async" src="./images/avatar-2.jpg" class="w-12 h-12 rounded-full" alt="">
-      <div class="text-left"><div class="font-bold text-slate-900">Procurement Lead</div><div class="text-sm text-slate-500">Resort Group, UAE</div></div>
+<!-- TESTIMONIALS -->
+<section class="py-20 bg-white overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6 text-center mb-12">
+    <div class="text-sm font-semibold text-emerald-600 uppercase tracking-wider mb-2">Client Stories</div>
+    <h2 class="text-4xl font-bold text-slate-900 mb-3">Trusted by Commercial Buyers Worldwide</h2>
+    <p class="text-slate-500 text-lg max-w-2xl mx-auto">Hotels, malls, resorts and design firms across 60+ countries specify VerdaScapes.</p>
+  </div>
+  <div class="marquee-wrap" aria-label="Client testimonials">
+    <div class="marquee-track">
+      <div class="w-80 shrink-0 bg-slate-50 rounded-2xl p-7">
+        <p class="text-slate-700 leading-relaxed mb-6">The 7-metre date palms anchored our resort atrium and two summers of poolside humidity haven't touched them.</p>
+        <div class="flex items-center gap-3">
+          <img loading="lazy" decoding="async" src="./images/avatar-t1.webp" class="w-12 h-12 rounded-full object-cover bg-slate-200" alt="">
+          <div><div class="font-bold text-emerald-700">James Whitfield</div><div class="text-sm text-slate-500">Procurement Director · Hotel Group, Dubai</div></div>
+        </div>
+      </div>
+      <div class="w-80 shrink-0 bg-slate-50 rounded-2xl p-7">
+        <p class="text-slate-700 leading-relaxed mb-6">They translated our concept into a precise BOM with samples and CAD blocks, so client approval was painless.</p>
+        <div class="flex items-center gap-3">
+          <img loading="lazy" decoding="async" src="./images/avatar-t2.webp" class="w-12 h-12 rounded-full object-cover bg-slate-200" alt="">
+          <div><div class="font-bold text-emerald-700">Sofia Marchetti</div><div class="text-sm text-slate-500">Landscape Architect · Milan</div></div>
+        </div>
+      </div>
+      <div class="w-80 shrink-0 bg-slate-50 rounded-2xl p-7">
+        <p class="text-slate-700 leading-relaxed mb-6">Our central court greenery looks fresh year-round without the watering and pruning we used to budget for.</p>
+        <div class="flex items-center gap-3">
+          <img loading="lazy" decoding="async" src="./images/avatar-t3.webp" class="w-12 h-12 rounded-full object-cover bg-slate-200" alt="">
+          <div><div class="font-bold text-emerald-700">Mark de Vries</div><div class="text-sm text-slate-500">Mall Operations Manager · Rotterdam</div></div>
+        </div>
+      </div>
+      <div class="w-80 shrink-0 bg-slate-50 rounded-2xl p-7">
+        <p class="text-slate-700 leading-relaxed mb-6">The foliage colour matched our scheme on the first sample round, which never happens with overseas suppliers.</p>
+        <div class="flex items-center gap-3">
+          <img loading="lazy" decoding="async" src="./images/avatar-t4.webp" class="w-12 h-12 rounded-full object-cover bg-slate-200" alt="">
+          <div><div class="font-bold text-emerald-700">Emily Carter</div><div class="text-sm text-slate-500">Interior Designer · London</div></div>
+        </div>
+      </div>
+      <div class="w-80 shrink-0 bg-slate-50 rounded-2xl p-7">
+        <p class="text-slate-700 leading-relaxed mb-6">From oversized banyans to topiary, they built the whole themed zone to spec and on schedule.</p>
+        <div class="flex items-center gap-3">
+          <img loading="lazy" decoding="async" src="./images/avatar-t5.webp" class="w-12 h-12 rounded-full object-cover bg-slate-200" alt="">
+          <div><div class="font-bold text-emerald-700">Carlos Mendoza</div><div class="text-sm text-slate-500">Resort Developer · Madrid</div></div>
+        </div>
+      </div>
+      <div class="w-80 shrink-0 bg-slate-50 rounded-2xl p-7">
+        <p class="text-slate-700 leading-relaxed mb-6">The NFPA 701 reports and test data were in hand before our facilities team even asked for them.</p>
+        <div class="flex items-center gap-3">
+          <img loading="lazy" decoding="async" src="./images/avatar-t6.webp" class="w-12 h-12 rounded-full object-cover bg-slate-200" alt="">
+          <div><div class="font-bold text-emerald-700">Lena Hoffmann</div><div class="text-sm text-slate-500">Procurement Lead · Frankfurt</div></div>
+        </div>
+      </div>
+      <div class="w-80 shrink-0 bg-slate-50 rounded-2xl p-7">
+        <p class="text-slate-700 leading-relaxed mb-6">Container-load pricing and a clear lead time made it easy to roll the look across four properties.</p>
+        <div class="flex items-center gap-3">
+          <img loading="lazy" decoding="async" src="./images/avatar-t7.webp" class="w-12 h-12 rounded-full object-cover bg-slate-200" alt="">
+          <div><div class="font-bold text-emerald-700">Liam O'Brien</div><div class="text-sm text-slate-500">Landscape Contractor · Dublin</div></div>
+        </div>
+      </div>
+      <div class="w-80 shrink-0 bg-slate-50 rounded-2xl p-7">
+        <p class="text-slate-700 leading-relaxed mb-6">Trees, planters and green walls arrived in one consolidated shipment with all the export paperwork handled.</p>
+        <div class="flex items-center gap-3">
+          <img loading="lazy" decoding="async" src="./images/avatar-t8.webp" class="w-12 h-12 rounded-full object-cover bg-slate-200" alt="">
+          <div><div class="font-bold text-emerald-700">Aisha Khan</div><div class="text-sm text-slate-500">Hospitality Buyer · Abu Dhabi</div></div>
+        </div>
+      </div>
+      <div class="w-80 shrink-0 bg-slate-50 rounded-2xl p-7">
+        <p class="text-slate-700 leading-relaxed mb-6">The 7-metre date palms anchored our resort atrium and two summers of poolside humidity haven't touched them.</p>
+        <div class="flex items-center gap-3">
+          <img loading="lazy" decoding="async" src="./images/avatar-t1.webp" class="w-12 h-12 rounded-full object-cover bg-slate-200" alt="">
+          <div><div class="font-bold text-emerald-700">James Whitfield</div><div class="text-sm text-slate-500">Procurement Director · Hotel Group, Dubai</div></div>
+        </div>
+      </div>
+      <div class="w-80 shrink-0 bg-slate-50 rounded-2xl p-7">
+        <p class="text-slate-700 leading-relaxed mb-6">They translated our concept into a precise BOM with samples and CAD blocks, so client approval was painless.</p>
+        <div class="flex items-center gap-3">
+          <img loading="lazy" decoding="async" src="./images/avatar-t2.webp" class="w-12 h-12 rounded-full object-cover bg-slate-200" alt="">
+          <div><div class="font-bold text-emerald-700">Sofia Marchetti</div><div class="text-sm text-slate-500">Landscape Architect · Milan</div></div>
+        </div>
+      </div>
+      <div class="w-80 shrink-0 bg-slate-50 rounded-2xl p-7">
+        <p class="text-slate-700 leading-relaxed mb-6">Our central court greenery looks fresh year-round without the watering and pruning we used to budget for.</p>
+        <div class="flex items-center gap-3">
+          <img loading="lazy" decoding="async" src="./images/avatar-t3.webp" class="w-12 h-12 rounded-full object-cover bg-slate-200" alt="">
+          <div><div class="font-bold text-emerald-700">Mark de Vries</div><div class="text-sm text-slate-500">Mall Operations Manager · Rotterdam</div></div>
+        </div>
+      </div>
+      <div class="w-80 shrink-0 bg-slate-50 rounded-2xl p-7">
+        <p class="text-slate-700 leading-relaxed mb-6">The foliage colour matched our scheme on the first sample round, which never happens with overseas suppliers.</p>
+        <div class="flex items-center gap-3">
+          <img loading="lazy" decoding="async" src="./images/avatar-t4.webp" class="w-12 h-12 rounded-full object-cover bg-slate-200" alt="">
+          <div><div class="font-bold text-emerald-700">Emily Carter</div><div class="text-sm text-slate-500">Interior Designer · London</div></div>
+        </div>
+      </div>
+      <div class="w-80 shrink-0 bg-slate-50 rounded-2xl p-7">
+        <p class="text-slate-700 leading-relaxed mb-6">From oversized banyans to topiary, they built the whole themed zone to spec and on schedule.</p>
+        <div class="flex items-center gap-3">
+          <img loading="lazy" decoding="async" src="./images/avatar-t5.webp" class="w-12 h-12 rounded-full object-cover bg-slate-200" alt="">
+          <div><div class="font-bold text-emerald-700">Carlos Mendoza</div><div class="text-sm text-slate-500">Resort Developer · Madrid</div></div>
+        </div>
+      </div>
+      <div class="w-80 shrink-0 bg-slate-50 rounded-2xl p-7">
+        <p class="text-slate-700 leading-relaxed mb-6">The NFPA 701 reports and test data were in hand before our facilities team even asked for them.</p>
+        <div class="flex items-center gap-3">
+          <img loading="lazy" decoding="async" src="./images/avatar-t6.webp" class="w-12 h-12 rounded-full object-cover bg-slate-200" alt="">
+          <div><div class="font-bold text-emerald-700">Lena Hoffmann</div><div class="text-sm text-slate-500">Procurement Lead · Frankfurt</div></div>
+        </div>
+      </div>
+      <div class="w-80 shrink-0 bg-slate-50 rounded-2xl p-7">
+        <p class="text-slate-700 leading-relaxed mb-6">Container-load pricing and a clear lead time made it easy to roll the look across four properties.</p>
+        <div class="flex items-center gap-3">
+          <img loading="lazy" decoding="async" src="./images/avatar-t7.webp" class="w-12 h-12 rounded-full object-cover bg-slate-200" alt="">
+          <div><div class="font-bold text-emerald-700">Liam O'Brien</div><div class="text-sm text-slate-500">Landscape Contractor · Dublin</div></div>
+        </div>
+      </div>
+      <div class="w-80 shrink-0 bg-slate-50 rounded-2xl p-7">
+        <p class="text-slate-700 leading-relaxed mb-6">Trees, planters and green walls arrived in one consolidated shipment with all the export paperwork handled.</p>
+        <div class="flex items-center gap-3">
+          <img loading="lazy" decoding="async" src="./images/avatar-t8.webp" class="w-12 h-12 rounded-full object-cover bg-slate-200" alt="">
+          <div><div class="font-bold text-emerald-700">Aisha Khan</div><div class="text-sm text-slate-500">Hospitality Buyer · Abu Dhabi</div></div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
